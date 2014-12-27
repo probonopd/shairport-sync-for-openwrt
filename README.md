@@ -28,7 +28,7 @@ Now you can proceed with building Shairport Sync and the other packages it requi
 * Move to the packages directory: `$cd ~/openwrt/audio/package/`.
 
 * Download the `Shairport Sync for OpenWrt` package:
-* `$git clone https://github.com/mikebrady/shairport-sync-for-openwrt.git`
+* `$git clone https://github.com/probonopd/shairport-sync-for-openwrt.git`
 
 * Next, move back to `~/openwrt/audio/`: `$cd ~/openwrt/audio/`
 
