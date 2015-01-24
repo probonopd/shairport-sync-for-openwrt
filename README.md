@@ -1,4 +1,4 @@
-Shairport Sync for OpenWrt
+Shairport Sync for OpenWrt [![Build Status](https://travis-ci.org/probonopd/shairport-sync-for-openwrt.svg?branch=2.1)](https://travis-ci.org/probonopd/shairport-sync-for-openwrt)
 ======================
 
 This is an OpenWrt package for building and installing ShairPort Sync, which is at https://github.com/mikebrady/shairport-sync.
