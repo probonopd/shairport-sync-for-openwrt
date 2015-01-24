@@ -35,8 +35,6 @@ script:
 - make V=s
 - find $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*/bin/
 - find . -name *.ipk -exec cp {} $TRAVIS_BUILD_DIR \;
-before_deploy:
-  git fetch --tags
 deploy:
   provider: releases
   api_key:
