@@ -9,7 +9,7 @@ env:
   matrix:
     - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
     - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/kirkwood/generic/OpenWrt-SDK-kirkwood-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
-    - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/lantiq/xway/OpenWrt-SDK-lantiq-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
+    - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/lantiq/generic/OpenWrt-SDK-lantiq-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
     - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/ramips/generic/OpenWrt-SDK-ramips-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
 install:
 - mkdir -p $TRAVIS_BUILD_DIR/local ; cd $TRAVIS_BUILD_DIR/local
@@ -43,7 +43,7 @@ deploy:
     secure: SSX0JBJmJFT4Q+ZYCHFwQDCqNgQoVxmRhUdRmhiAaSjz4SQf7ewNhTB2ap14Mh75rhaHd4+VNSx3sFiFmQsFwXMK1FbkaS4b5GTbPTGsbXdRKJDXJqvgdZVsruAt5hL7I5Sda4CllN3ZOhEUNmc1DsafjLFWVHDnt6CZdHA2eME=
   skip_cleanup: true
   file_glob: true
-  file: $TRAVIS_BUILD_DIR/*.ipk
+  file: $TRAVIS_BUILD_DIR/$PACKAGE*.ipk
   on:
     tags: true
     all_branches: true
