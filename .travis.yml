@@ -9,7 +9,6 @@ env:
   matrix:
     - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/ar71xx/generic/OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
     - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/kirkwood/generic/OpenWrt-SDK-kirkwood-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
-    - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/lantiq/generic/OpenWrt-SDK-lantiq-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
     - SDK_URL=https://downloads.openwrt.org/snapshots/trunk/ramips/generic/OpenWrt-SDK-ramips-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
 install:
 - mkdir -p $TRAVIS_BUILD_DIR/local ; cd $TRAVIS_BUILD_DIR/local
