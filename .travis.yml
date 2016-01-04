@@ -26,7 +26,7 @@ install:
 - ln -s $TRAVIS_BUILD_DIR/Makefile package/$PACKAGE/
 - ln -s $TRAVIS_BUILD_DIR/files package/$PACKAGE/
 - ./scripts/feeds update -a
-- ./scripts/feeds install alsa-lib libdaemon libpopt alsa-utils 
+- ./scripts/feeds install alsa-lib libdaemon libpopt alsa-utils libsoxr
 script:
 - export STAGING_DIR=$(readlink -e $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*/staging_dir/toolchain-*/bin)
 - export HOST=$(readlink -e $TRAVIS_BUILD_DIR/sdk/OpenWrt-SDK-*/staging_dir/host/bin)
