@@ -13,7 +13,7 @@ PKG_VERSION:=2.6
 PKG_RELEASE:=2
 
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=git://github.com/mikebrady/shairport-sync.git
+PKG_SOURCE_URL:=git://github.com/mikebrady/shairport-sync.git;barrier-breaker
 PKG_SOURCE_VERSION:=$(PKG_VERSION)
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
